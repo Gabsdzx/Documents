@@ -1,0 +1,208 @@
+body{
+    background-color: #100d18;
+    color: #f4f0ff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; 
+}
+
+
+
+/*=======================
+CABEÇALHO
+=========================*/
+
+header{
+    background-color: #201a32;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 2px solid #174bff;
+}
+
+header h1{
+    color: #f4f0ff;
+    margin: 0;
+    font-size: 30px;
+    text-shadow:0 0 12px #397bff;
+}
+
+
+
+/*=======================
+MENU DE NAVEGAÇÃO
+=========================*/
+
+nav{
+    background-color: #171326;
+    padding: 12px;
+    border-bottom: 1px solid #30264b;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: #f4f0ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #397bff;
+    text-shadow: 0 0 10px #397bff;
+}
+
+
+
+/*=======================
+CONTEÚDO PRINCIPAL
+=========================*/
+
+main{
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+section{
+    background-color: #201a32;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #30264b;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(23, 75, 255, 0.08);
+}
+
+
+
+/*=======================
+TÍTULOS E TEXTOS
+=========================*/
+
+h2{
+    color: #397bff;
+    border-bottom: 1px solid #45405a;
+    padding-bottom: 10px;
+}
+
+p{
+    color: #d0cadf;
+}
+
+strong{
+    color: #ffe9a6;
+}
+
+
+/*=======================
+IMAGEM
+=========================*/
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border: 2px solid #397bff;
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(57, 123, 255, 0.35);
+}
+
+
+
+/*=======================
+LISTA
+=========================*/
+
+li{
+    margin-bottom: 8px;
+}
+
+
+
+/*=======================
+TABELA
+=========================*/
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f4f0ff;
+}
+
+th{
+    background-color: #174bff;
+    color: white;
+}
+
+th,td{
+    border: 1px solid #45405a;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even){
+    background-color: #2a2340;
+}
+
+
+
+/*=======================
+RODAPÉ
+=========================*/
+
+footer{
+    background-color: #171326;
+    color: #b8b3c7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #174bff;
+}
+
+footer p{
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+
+/*=======================
+ADAPTAÇÃO
+=========================*/
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 12px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
